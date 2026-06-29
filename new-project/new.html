@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TAF FUWAD | MERN Stack Developer Portfolio</title>
+  <meta name="description" content="TAF FUWAD - Professional MERN Stack & Full Stack Web Developer. Building modern, scalable web applications with React, Node.js, and more.">
+  <meta name="keywords" content="MERN Stack Developer, Full Stack Developer, React, Node.js, Web Developer">
+  <meta name="author" content="TAF FUWAD">
+  <meta property="og:title" content="TAF FUWAD | MERN Stack Developer">
+  <meta property="og:description" content="Professional MERN Stack & Full Stack Web Developer Portfolio">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="new.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-outline" id="cursor-outline"></div>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loader-content">
+      <div class="loader-logo">TF</div>
+      <div class="loader-bar"></div>
+    </div>
+  </div>
+
+  <!-- Background Effects -->
+  <div class="bg-effects">
+    <div class="bg-gradient-orbs"></div>
+    <div class="bg-noise"></div>
+    <div class="mouse-glow" id="mouse-glow"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <img src="images/logo.png" alt="TAF FUWAD Logo">
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="#home" class="active" data-section="home">Home</a>
+        <a href="#skills" data-section="skills">Skills</a>
+        <a href="#services" data-section="services">Services</a>
+        <a href="#projects" data-section="projects">Projects</a>
+        <a href="#about" data-section="about">About</a>
+        <a href="#contact" data-section="contact">Contact</a>
+      </div>
+      <a href="#contact" class="nav-hire-btn magnetic-btn" data-magnetic>Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-overlay" id="mobile-overlay"></div>
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#home" class="active" data-section="home">Home</a>
+    <a href="#skills" data-section="skills">Skills</a>
+    <a href="#services" data-section="services">Services</a>
+    <a href="#projects" data-section="projects">Projects</a>
+    <a href="#about" data-section="about">About</a>
+    <a href="#contact" data-section="contact">Contact</a>
+    <a href="#contact" class="mobile-hire-btn">Hire Me</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content" data-parallax>
+      <p class="hero-greeting reveal">Hello, I'm</p>
+      <h1 class="hero-name reveal">TAF FUWAD</h1>
+      <h2 class="hero-title reveal">MERN Stack & Full Stack Web Developer</h2>
+      <p class="hero-desc reveal">I turn your vision into reality with modern web development. Crafting pixel-perfect, performant digital experiences that leave lasting impressions.</p>
+      <div class="hero-buttons reveal">
+        <a href="#contact" class="btn-primary magnetic-btn" data-magnetic>
+          <span>Hire Me</span>
+          <span class="btn-glow"></span>
+        </a>
+        <a href="#" class="btn-secondary magnetic-btn" data-magnetic>
+          <i class="fas fa-download"></i>
+          <span>Download CV</span>
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual reveal" data-parallax>
+      <div class="hero-image-wrapper" id="hero-image">
+        <img src="images/vinjin.png" alt="TAF FUWAD Developer Illustration">
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <h2 class="section-title">My <span>Skills</span></h2>
+        <p class="section-subtitle">Technologies and tools I use to bring ideas to life</p>
+      </div>
+      <div class="skills-grid">
+        <!-- Skill 1: HTML5 -->
+        <div class="skill-card reveal stagger-1" data-tilt>
+          <div class="skill-icon">
+            <i class="fa-brands fa-html5" style="color: #E34F26; font-size: 40px;"></i>
+          </div>
+          <h3 class="skill-name">HTML5</h3>
+          <div class="skill-progress-ring">
+            <svg viewBox="0 0 68 68">
+              <circle class="bg" cx="34" cy="34" r="30"></circle>
+              <circle class="progress" cx="34" cy="34" r="30" data-percent="95" style="stroke-dasharray: 188.5; stroke-dashoffset: 188.5;"></circle>
+            </svg>
+          </div>
+          <span class="skill-percentage" data-count="95">0%</span>
+        </div>
+        <!-- Skill 2: CSS3 -->
+        <div class="skill-card reveal stagger-2" data-tilt>
+          <div class="skill-icon">
+            <i class="fa-brands fa-css3-alt" style="color: #1572B6; font-size: 40px;"></i>
+          </div>
+          <h3 class="skill-name">CSS3</h3>
+          <div class="skill-progress-ring">
+            <svg viewBox="0 0 68 68">
+              <circle class="bg" cx="34" cy="34" r="30"></circle>
+              <circle class="progress" cx="34" cy="34" r="30" data-percent="90" style="stroke-dasharray: 188.5; stroke-dashoffset: 188.5;"></circle>
+            </svg>
+          </div>
+          <span class="skill-percentage" data-count="90">0%</span>
+        </div>
+        <!-- Skill 3: JavaScript -->
+        <div class="skill-card reveal stagger-3" data-tilt>
+          <div class="skill-icon">
+            <i class="fa-brands fa-js" style="color: #F7DF1E; font-size: 40px;"></i>
+          </div>
+          <h3 class="skill-name">JavaScript</h3>
+          <div class="skill-progress-ring">
+            <svg viewBox="0 0 68 68">
+              <circle class="bg" cx="34" cy="34" r="30"></circle>
+              <circle class="progress" cx="34" cy="34" r="30" data-percent="88" style="stroke-dasharray: 188.5; stroke-dashoffset: 188.5;"></circle>
+            </svg>
+          </div>
+          <span class="skill-percentage" data-count="88">0%</span>
+        </div>
+        <!-- Skill 4: React -->
+        <div class="skill-card reveal stagger-4" data-tilt>
+          <div class="skill-icon">
+            <i class="fa-brands fa-react" style="color: #61DAFB; font-size: 40px;"></i>
+          </div>
+          <h3 class="skill-name">React</h3>
+          <div class="skill-progress-ring">
+            <svg viewBox="0 0 68 68">
+              <circle class="bg" cx="34" cy="34" r="30"></circle>
+              <circle class="progress" cx="34" cy="34" r="30" data-percent="92" style="stroke-dasharray: 188.5; stroke-dashoffset: 188.5;"></circle>
+            </svg>
+          </div>
+          <span class="skill-percentage" data-count="92">0%</span>
+        </div>
+        <!-- Skill 5: Next.js -->
+        <div class="skill-card reveal stagger-5" data-tilt>
+          <div class="skill-icon">
+            <svg width="40" height="40" viewBox="0 0 180 180" fill="none"><mask id="a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="180" height="180"><circle cx="90" cy="90" r="90" fill="#000"/></mask><g mask="url(#a)"><circle cx="90" cy="90" r="87" fill="#000" stroke="#fff" stroke-width="6"/><path d="M149.508 157.52L69.142 54H54v71.97h12.114V69.384l73.885 95.461a90.304 90.304 0 009.509-7.325Z" fill="url(#b)"/><rect x="115" y="54" width="12" height="72" fill="url(#c)"/></g><defs><linearGradient id="b" x1="109" y1="116.5" x2="144.5" y2="160.5" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient><linearGradient id="c" x1="121" y1="54" x2="120.799" y2="106.875" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs></svg>
+          </div>
+          <h3 class="skill-name">Next.js</h3>
+          <div class="skill-progress-ring">
+            <svg viewBox="0 0 68 68">
+              <circle class="bg" cx="34" cy="34" r="30"></circle>
+              <circle class="progress" cx="34" cy="34" r="30" data-percent="80" style="stroke-dasharray: 188.5; stroke-dashoffset: 188.5;"></circle>
+            </svg>
+          </div>
+          <span class="skill-percentage" data-count="80">0%</span>
+        </div>
+        <!-- Skill 6: Node.js -->
+        <div class="skill-card reveal stagger-6" data-tilt>
+          <div class="skill-icon">
+            <i class="fa-brands fa-node-js" style="color: #339933; font-size: 40px;"></i>
+          </div>
+          <h3 class="skill-name">Node.js</h3>
+          <div class="skill-progress-ring">
+            <svg viewBox="0 0 68 68">
+              <circle class="bg" cx="34" cy="34" r="30"></circle>
+              <circle class="progress" cx="34" cy="34" r="30" data-percent="85" style="stroke-dasharray: 188.5; stroke-dashoffset: 188.5;"></circle>
+            </svg>
+          </div>
+          <span class="skill-percentage" data-count="85">0%</span>
+        </div>
+        <!-- Skill 7: Express.js -->
+        <div class="skill-card reveal stagger-7" data-tilt>
+          <div class="skill-icon">
+            <i class="fas fa-server" style="color: #b8b8b8; font-size: 36px;"></i>
+          </div>
+          <h3 class="skill-name">Express.js</h3>
+          <div class="skill-progress-ring">
+            <svg viewBox="0 0 68 68">
+              <circle class="bg" cx="34" cy="34" r="30"></circle>
+              <circle class="progress" cx="34" cy="34" r="30" data-percent="82" style="stroke-dasharray: 188.5; stroke-dashoffset: 188.5;"></circle>
+            </svg>
+          </div>
+          <span class="skill-percentage" data-count="82">0%</span>
+        </div>
+        <!-- Skill 8: Tailwind CSS -->
+        <div class="skill-card reveal stagger-8" data-tilt>
+          <div class="skill-icon">
+            <svg width="40" height="40" viewBox="0 0 54 33" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.514-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.514-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z" fill="#06B6D4"/></svg>
+          </div>
+          <h3 class="skill-name">Tailwind CSS</h3>
+          <div class="skill-progress-ring">
+            <svg viewBox="0 0 68 68">
+              <circle class="bg" cx="34" cy="34" r="30"></circle>
+              <circle class="progress" cx="34" cy="34" r="30" data-percent="88" style="stroke-dasharray: 188.5; stroke-dashoffset: 188.5;"></circle>
+            </svg>
+          </div>
+          <span class="skill-percentage" data-count="88">0%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <h2 class="section-title">My <span>Services</span></h2>
+        <p class="section-subtitle">Comprehensive web development solutions tailored to your needs</p>
+      </div>
+      <div class="services-grid">
+        <!-- Service 1: Frontend Development -->
+        <div class="service-card reveal stagger-1" data-tilt>
+          <div class="service-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3 class="service-title">Frontend Development</h3>
+          <p class="service-desc">Creating stunning, responsive user interfaces with modern frameworks and pixel-perfect precision.</p>
+          <ul class="service-features">
+            <li>React & Next.js Applications</li>
+            <li>Responsive Web Design</li>
+            <li>Interactive UI/UX</li>
+            <li>Performance Optimization</li>
+          </ul>
+        </div>
+        <!-- Service 2: Backend Development -->
+        <div class="service-card reveal stagger-2" data-tilt>
+          <div class="service-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <h3 class="service-title">Backend Development</h3>
+          <p class="service-desc">Building robust, scalable server-side solutions with secure APIs and efficient database management.</p>
+          <ul class="service-features">
+            <li>Node.js & Express APIs</li>
+            <li>MongoDB & Database Design</li>
+            <li>Authentication & Security</li>
+            <li>RESTful Architecture</li>
+          </ul>
+        </div>
+        <!-- Service 3: Full Stack Development -->
+        <div class="service-card reveal stagger-3" data-tilt>
+          <div class="service-icon">
+            <i class="fas fa-layer-group"></i>
+          </div>
+          <h3 class="service-title">Full Stack Development</h3>
+          <p class="service-desc">End-to-end web application development, from concept to deployment, with the complete MERN stack.</p>
+          <ul class="service-features">
+            <li>Complete MERN Applications</li>
+            <li>Real-time Features</li>
+            <li>Cloud Deployment</li>
+            <li>Maintenance & Support</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+        <p class="section-subtitle">A showcase of my recent work and creative endeavors</p>
+      </div>
+      <div class="projects-grid">
+        <!-- Project 1: E-Commerce Platform -->
+        <div class="project-card reveal stagger-1" data-tilt>
+          <div class="project-image">
+            <div class="project-image-placeholder" style="background: linear-gradient(135deg, #3B82F6, #8B5CF6); display:flex; align-items:center; justify-content:center; height:100%; font-size:48px;"><i class="fas fa-shopping-cart"></i></div>
+            <div class="project-image-overlay">
+              <div class="project-overlay-content">
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">E-Commerce Platform</h3>
+            <p class="project-desc">Full-stack e-commerce solution with payment integration, admin dashboard, and real-time inventory management.</p>
+            <div class="project-tech">
+              <span>React</span><span>Node.js</span><span>MongoDB</span><span>Stripe</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="primary-link"><i class="fas fa-external-link-alt"></i>Pending</a>
+              <a href="#"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 2: Real-Time Chat App -->
+        <div class="project-card reveal stagger-2" data-tilt>
+          <div class="project-image">
+            <div class="project-image-placeholder" style="background: linear-gradient(135deg, #8B5CF6, #EC4899); display:flex; align-items:center; justify-content:center; height:100%; font-size:48px;"><i class="fas fa-comments"></i></div>
+            <div class="project-image-overlay">
+              <div class="project-overlay-content">
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Real-Time Chat App</h3>
+            <p class="project-desc">Feature-rich messaging platform with WebSocket communication, file sharing, and group conversations.</p>
+            <div class="project-tech">
+              <span>React</span><span>Socket.io</span><span>Express</span><span>MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="primary-link"><i class="fas fa-external-link-alt"></i>Pending</a>
+              <a href="#"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 3: Project Management Tool -->
+        <div class="project-card reveal stagger-3" data-tilt>
+          <div class="project-image">
+            <div class="project-image-placeholder" style="background: linear-gradient(135deg, #06B6D4, #3B82F6); display:flex; align-items:center; justify-content:center; height:100%; font-size:48px;"><i class="fas fa-tasks"></i></div>
+            <div class="project-image-overlay">
+              <div class="project-overlay-content">
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Project Management Tool</h3>
+            <p class="project-desc">Collaborative project management app with Kanban boards, team workflows, and progress analytics.</p>
+            <div class="project-tech">
+              <span>Next.js</span><span>Node.js</span><span>MongoDB</span><span>Redux</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="primary-link"><i class="fas fa-external-link-alt"></i>Pending</a>
+              <a href="#"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 4: Food Delivery App -->
+        <div class="project-card reveal stagger-4" data-tilt>
+          <div class="project-image">
+            <div class="project-image-placeholder" style="background: linear-gradient(135deg, #F59E0B, #EF4444); display:flex; align-items:center; justify-content:center; height:100%; font-size:48px;"><i class="fas fa-utensils"></i></div>
+            <div class="project-image-overlay">
+              <div class="project-overlay-content">
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Food Delivery App</h3>
+            <p class="project-desc">Complete food ordering platform with restaurant management, live order tracking, and payment processing.</p>
+            <div class="project-tech">
+              <span>React</span><span>Express</span><span>MongoDB</span><span>Maps API</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="primary-link"><i class="fas fa-external-link-alt"></i>Pending</a>
+              <a href="#"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 5: Analytics Dashboard -->
+        <div class="project-card reveal stagger-5" data-tilt>
+          <div class="project-image">
+            <div class="project-image-placeholder" style="background: linear-gradient(135deg, #10B981, #3B82F6); display:flex; align-items:center; justify-content:center; height:100%; font-size:48px;"><i class="fas fa-chart-line"></i></div>
+            <div class="project-image-overlay">
+              <div class="project-overlay-content">
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Analytics Dashboard</h3>
+            <p class="project-desc">Interactive data visualization dashboard with real-time metrics, custom reports, and team collaboration features.</p>
+            <div class="project-tech">
+              <span>React</span><span>D3.js</span><span>Node.js</span><span>PostgreSQL</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="primary-link"><i class="fas fa-external-link-alt"></i> Pending</a>
+              <a href="#"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+        <!-- Project 6: Blog Platform -->
+        <div class="project-card reveal stagger-6" data-tilt>
+          <div class="project-image">
+            <div class="project-image-placeholder" style="background: linear-gradient(135deg, #8B5CF6, #06B6D4); display:flex; align-items:center; justify-content:center; height:100%; font-size:48px;"><i class="fas fa-blog"></i></div>
+            <div class="project-image-overlay">
+              <div class="project-overlay-content">
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Blog Platform</h3>
+            <p class="project-desc">Modern blogging platform with rich text editor, SEO optimization, comment system, and social sharing.</p>
+            <div class="project-tech">
+              <span>Next.js</span><span>MongoDB</span><span>Cloudinary</span><span>Auth0</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="primary-link"><i class="fas fa-external-link-alt"></i> Pending</a>
+              <a href="#"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <p class="section-subtitle">Get to know the developer behind the code</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-side reveal reveal-left">
+          <div class="about-image-wrapper">
+            <img src="images/vinjin.png" alt="TAF FUWAD">
+          </div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-number" data-count="3">0</span>+
+              <p class="stat-label">Projects Completed</p>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-count="6">0</span>+
+              <p class="stat-label">Months Experience</p>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-count="0">0</span>+
+              <p class="stat-label">No order yet</p>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-count="8">0</span>+
+              <p class="stat-label">Technologies</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-content reveal reveal-right">
+          <h3 class="about-heading">Passionate MERN Stack Developer</h3>
+          <p class="about-text">I'm a dedicated full-stack web developer with a passion for creating beautiful, functional, and user-centered digital experiences. With expertise in the MERN stack, I bring ideas to life through clean code and thoughtful design.</p>
+          <p class="about-text">My journey in web development started with curiosity and has evolved into a professional pursuit of excellence. I constantly learn new technologies and best practices to deliver cutting-edge solutions.</p>
+          <div class="about-timeline">
+            <div class="timeline-item">
+              <span class="timeline-year">2026 - Present</span>
+              <h4 class="timeline-title">Full Stack Developer</h4>
+              <p class="timeline-desc">Building complete web applications with the MERN stack for clients worldwide.</p>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-year">2025</span>
+              <h4 class="timeline-title">Frontend Developer</h4>
+              <p class="timeline-desc">Specialized in React.js and modern CSS frameworks to create responsive UIs.</p>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-year">2025</span>
+              <h4 class="timeline-title">Web Development Journey</h4>
+              <p class="timeline-desc">Started learning HTML, CSS, and JavaScript. Built first projects and discovered passion for coding.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="section-container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Get In <span>Touch</span></h2>
+        <p class="section-subtitle">Have a project in mind? Let's work together to make it happen</p>
+      </div>
+      <div class="contact-card reveal">
+        <form id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <input type="text" id="name" placeholder=" " required>
+              <label for="name">Your Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" placeholder=" " required>
+              <label for="email">Your Email</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" placeholder=" " required>
+            <label for="subject">Subject</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="5" placeholder=" " required></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <button type="submit" class="contact-submit magnetic-btn" data-magnetic>
+            <span>Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="mailto:contact@taffuwad.com" class="social-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">TAF FUWAD</div>
+      <p class="footer-text">&copy; 2026 TAF FUWAD. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      </div>
+      <a href="#home" class="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+    </div>
+  </footer>
+
+  <script src="new.js"></script>
+</body>
+</html>
